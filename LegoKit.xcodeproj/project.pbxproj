@@ -1,0 +1,576 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3385B9641B6106500087684A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3385B9631B6106500087684A /* AppDelegate.swift */; };
+		3385B9661B6106500087684A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3385B9651B6106500087684A /* ViewController.swift */; };
+		3385B9691B6106500087684A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3385B9671B6106500087684A /* Main.storyboard */; };
+		3385B96B1B6106500087684A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3385B96A1B6106500087684A /* Assets.xcassets */; };
+		3385B96E1B6106500087684A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3385B96C1B6106500087684A /* LaunchScreen.storyboard */; };
+		3385B97C1B6106CC0087684A /* LegoKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 3385B97B1B6106CC0087684A /* LegoKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3385B9831B6106CC0087684A /* LegoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3385B9791B6106CC0087684A /* LegoKit.framework */; };
+		3385B98A1B6106CC0087684A /* LegoKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3385B9891B6106CC0087684A /* LegoKitTests.swift */; };
+		3385B98F1B6106CC0087684A /* LegoKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3385B9791B6106CC0087684A /* LegoKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3385B9991B6107000087684A /* LayoutAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3385B9971B6107000087684A /* LayoutAttribute.swift */; };
+		3385B99A1B6107000087684A /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3385B9981B6107000087684A /* UIViewExtensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3385B9841B6106CC0087684A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 332055CC1B5C454100F74072 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3385B9781B6106CC0087684A;
+			remoteInfo = LegoKit;
+		};
+		3385B9861B6106CC0087684A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 332055CC1B5C454100F74072 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3385B9601B6106500087684A;
+			remoteInfo = LegoKitExample;
+		};
+		3385B98C1B6106CC0087684A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 332055CC1B5C454100F74072 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3385B9781B6106CC0087684A;
+			remoteInfo = LegoKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3385B9931B6106CC0087684A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3385B98F1B6106CC0087684A /* LegoKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3385B9611B6106500087684A /* LegoKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LegoKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3385B9631B6106500087684A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3385B9651B6106500087684A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3385B9681B6106500087684A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3385B96A1B6106500087684A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3385B96D1B6106500087684A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3385B96F1B6106500087684A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3385B9791B6106CC0087684A /* LegoKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LegoKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3385B97B1B6106CC0087684A /* LegoKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LegoKit.h; sourceTree = "<group>"; };
+		3385B97D1B6106CC0087684A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3385B9821B6106CC0087684A /* LegoKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LegoKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3385B9891B6106CC0087684A /* LegoKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegoKitTests.swift; sourceTree = "<group>"; };
+		3385B98B1B6106CC0087684A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3385B9971B6107000087684A /* LayoutAttribute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutAttribute.swift; sourceTree = "<group>"; };
+		3385B9981B6107000087684A /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3385B95E1B6106500087684A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3385B9751B6106CC0087684A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3385B97F1B6106CC0087684A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3385B9831B6106CC0087684A /* LegoKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		332055CB1B5C454100F74072 = {
+			isa = PBXGroup;
+			children = (
+				3385B9621B6106500087684A /* LegoKitExample */,
+				3385B97A1B6106CC0087684A /* LegoKit */,
+				3385B9881B6106CC0087684A /* LegoKitTests */,
+				332055D51B5C454100F74072 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		332055D51B5C454100F74072 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3385B9611B6106500087684A /* LegoKitExample.app */,
+				3385B9791B6106CC0087684A /* LegoKit.framework */,
+				3385B9821B6106CC0087684A /* LegoKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3385B9621B6106500087684A /* LegoKitExample */ = {
+			isa = PBXGroup;
+			children = (
+				3385B9631B6106500087684A /* AppDelegate.swift */,
+				3385B9651B6106500087684A /* ViewController.swift */,
+				3385B9671B6106500087684A /* Main.storyboard */,
+				3385B96A1B6106500087684A /* Assets.xcassets */,
+				3385B96C1B6106500087684A /* LaunchScreen.storyboard */,
+				3385B96F1B6106500087684A /* Info.plist */,
+			);
+			path = LegoKitExample;
+			sourceTree = "<group>";
+		};
+		3385B97A1B6106CC0087684A /* LegoKit */ = {
+			isa = PBXGroup;
+			children = (
+				3385B9971B6107000087684A /* LayoutAttribute.swift */,
+				3385B9981B6107000087684A /* UIViewExtensions.swift */,
+				3385B97B1B6106CC0087684A /* LegoKit.h */,
+				3385B97D1B6106CC0087684A /* Info.plist */,
+			);
+			path = LegoKit;
+			sourceTree = "<group>";
+		};
+		3385B9881B6106CC0087684A /* LegoKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				3385B9891B6106CC0087684A /* LegoKitTests.swift */,
+				3385B98B1B6106CC0087684A /* Info.plist */,
+			);
+			path = LegoKitTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3385B9761B6106CC0087684A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3385B97C1B6106CC0087684A /* LegoKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3385B9601B6106500087684A /* LegoKitExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3385B9701B6106500087684A /* Build configuration list for PBXNativeTarget "LegoKitExample" */;
+			buildPhases = (
+				3385B95D1B6106500087684A /* Sources */,
+				3385B95E1B6106500087684A /* Frameworks */,
+				3385B95F1B6106500087684A /* Resources */,
+				3385B9931B6106CC0087684A /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3385B98D1B6106CC0087684A /* PBXTargetDependency */,
+			);
+			name = LegoKitExample;
+			productName = LegoKitExample;
+			productReference = 3385B9611B6106500087684A /* LegoKitExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3385B9781B6106CC0087684A /* LegoKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3385B9901B6106CC0087684A /* Build configuration list for PBXNativeTarget "LegoKit" */;
+			buildPhases = (
+				3385B9741B6106CC0087684A /* Sources */,
+				3385B9751B6106CC0087684A /* Frameworks */,
+				3385B9761B6106CC0087684A /* Headers */,
+				3385B9771B6106CC0087684A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LegoKit;
+			productName = LegoKit;
+			productReference = 3385B9791B6106CC0087684A /* LegoKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3385B9811B6106CC0087684A /* LegoKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3385B9941B6106CC0087684A /* Build configuration list for PBXNativeTarget "LegoKitTests" */;
+			buildPhases = (
+				3385B97E1B6106CC0087684A /* Sources */,
+				3385B97F1B6106CC0087684A /* Frameworks */,
+				3385B9801B6106CC0087684A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3385B9851B6106CC0087684A /* PBXTargetDependency */,
+				3385B9871B6106CC0087684A /* PBXTargetDependency */,
+			);
+			name = LegoKitTests;
+			productName = LegoKitTests;
+			productReference = 3385B9821B6106CC0087684A /* LegoKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		332055CC1B5C454100F74072 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Lukas Lipka";
+				TargetAttributes = {
+					3385B9601B6106500087684A = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					3385B9781B6106CC0087684A = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					3385B9811B6106CC0087684A = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 3385B9601B6106500087684A;
+					};
+				};
+			};
+			buildConfigurationList = 332055CF1B5C454100F74072 /* Build configuration list for PBXProject "LegoKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 332055CB1B5C454100F74072;
+			productRefGroup = 332055D51B5C454100F74072 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3385B9601B6106500087684A /* LegoKitExample */,
+				3385B9781B6106CC0087684A /* LegoKit */,
+				3385B9811B6106CC0087684A /* LegoKitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3385B95F1B6106500087684A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3385B96E1B6106500087684A /* LaunchScreen.storyboard in Resources */,
+				3385B96B1B6106500087684A /* Assets.xcassets in Resources */,
+				3385B9691B6106500087684A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3385B9771B6106CC0087684A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3385B9801B6106CC0087684A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3385B95D1B6106500087684A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3385B9661B6106500087684A /* ViewController.swift in Sources */,
+				3385B9641B6106500087684A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3385B9741B6106CC0087684A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3385B99A1B6107000087684A /* UIViewExtensions.swift in Sources */,
+				3385B9991B6107000087684A /* LayoutAttribute.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3385B97E1B6106CC0087684A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3385B98A1B6106CC0087684A /* LegoKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3385B9851B6106CC0087684A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3385B9781B6106CC0087684A /* LegoKit */;
+			targetProxy = 3385B9841B6106CC0087684A /* PBXContainerItemProxy */;
+		};
+		3385B9871B6106CC0087684A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3385B9601B6106500087684A /* LegoKitExample */;
+			targetProxy = 3385B9861B6106CC0087684A /* PBXContainerItemProxy */;
+		};
+		3385B98D1B6106CC0087684A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3385B9781B6106CC0087684A /* LegoKit */;
+			targetProxy = 3385B98C1B6106CC0087684A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3385B9671B6106500087684A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3385B9681B6106500087684A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3385B96C1B6106500087684A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3385B96D1B6106500087684A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		332055FA1B5C454100F74072 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		332055FB1B5C454100F74072 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3385B9711B6106500087684A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = LegoKitExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lukaslipka.LegoKitExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3385B9721B6106500087684A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = LegoKitExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lukaslipka.LegoKitExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3385B9911B6106CC0087684A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = LegoKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lukaslipka.LegoKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3385B9921B6106CC0087684A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = LegoKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lukaslipka.LegoKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3385B9951B6106CC0087684A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LegoKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lukaslipka.LegoKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LegoKitExample.app/LegoKitExample";
+			};
+			name = Debug;
+		};
+		3385B9961B6106CC0087684A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LegoKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lukaslipka.LegoKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LegoKitExample.app/LegoKitExample";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		332055CF1B5C454100F74072 /* Build configuration list for PBXProject "LegoKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				332055FA1B5C454100F74072 /* Debug */,
+				332055FB1B5C454100F74072 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3385B9701B6106500087684A /* Build configuration list for PBXNativeTarget "LegoKitExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3385B9711B6106500087684A /* Debug */,
+				3385B9721B6106500087684A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3385B9901B6106CC0087684A /* Build configuration list for PBXNativeTarget "LegoKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3385B9911B6106CC0087684A /* Debug */,
+				3385B9921B6106CC0087684A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3385B9941B6106CC0087684A /* Build configuration list for PBXNativeTarget "LegoKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3385B9951B6106CC0087684A /* Debug */,
+				3385B9961B6106CC0087684A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 332055CC1B5C454100F74072 /* Project object */;
+}

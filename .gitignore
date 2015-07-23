@@ -1,0 +1,8 @@
+.DS_Store
+Pods/
+*xcuserdata/
+*build/
+*.mode1v3
+*.pbxuser
+*.xcworkspace
+*.moved-aside/

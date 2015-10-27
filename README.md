@@ -1,6 +1,6 @@
 # LegoKit
 
-[![Build Status](https://travis-ci.org/lipka/LLARingSpinnerView.svg)](https://travis-ci.org/lipka/LLARingSpinnerView)
+[![Build Status](https://travis-ci.org/lipka/LegoKit.svg)](https://travis-ci.org/lipka/LegoKit)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 

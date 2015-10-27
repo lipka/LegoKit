@@ -1,0 +1,8 @@
+language: objective-c
+before_install:
+  - brew update
+  - brew outdated xctool || brew upgrade xctool
+xcode_project: LegoKit.xcodeproj
+xcode_scheme: LegoKitTests
+xcode_sdk: iphonesimulator
+osx_image: xcode7

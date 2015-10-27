@@ -5,8 +5,6 @@
 
 LegoKit is a declarative Auto Layout wrapper written in Swift. Supports attributes, constants, multipliers and priorities.
 
-I made this mainly for fun.
-
 ## Usage
 
 ``` swift
